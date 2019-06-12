@@ -1,0 +1,569 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+
+
+/* Header CSS */
+
+header {
+	padding: 10px 20px;
+}
+
+.topnav {
+	float: right;
+  	overflow: hidden;
+}
+
+.topnav a.icon {
+  display: none
+}
+
+.topnav a.icon i {
+	color: black;
+}
+
+@media screen and (max-width: 600px) {
+  #nav-content {
+  	display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+	float: right;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+	#nav-content {
+  	display: block;
+  }
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+	margin-right: 15px;
+	font-weight: 600;
+	font-size: 15px;
+	color: #636e72;
+}
+
+nav ul > li:last-child {
+   margin-left: 10px;
+}
+
+.dropbtn {
+  text-decoration: none;
+	color: #636e72;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #7f8c8d;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+	width: 90%;
+}
+
+.header-logo {
+	width: 80px;
+	height: 50px;
+	float: left;
+}
+
+.panel {
+	background: url('image/page-header.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 425px;
+	margin-top: 10px;
+    position: relative;
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.layer h1 {
+	color: white;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: inherit;
+	font-size: 70px;
+	font-weight: bold;
+	margin-left: 100px;
+	position: relative;
+	top: 30%;
+}
+
+.layer hr {
+	position: relative;
+	max-width: 45px;
+	margin-left: 100px;
+    border: 0;
+    border-top: 6px solid #08c1b8;
+	top: 32%;
+}
+
+
+/* Container CSS */
+
+.container {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.top-section{
+	display: flex;
+	flex-flow: row wrap;
+}
+.top-section > div{
+	margin: 10px;
+	padding: 20px;
+	float: left;
+}
+.sectionheading{
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: 32px;
+	color: #333333;
+
+}
+#firstcontent{
+	width: 30%;
+	margin: 0px;
+
+}
+#secondcontent{
+	width: 60%;
+	margin: 0px;
+}
+.fontpara{
+	font-weight:lighter;
+	font-size: 16px;
+	color: #333333;
+	line-height: 1.5;
+}
+hr{
+    border: 0;
+    border-top: 6px solid #08c1b8;
+	max-width: 45px;
+	margin-left: 5%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/* border: black solid 2px; */
+	/*margin: 10px;*/
+}
+.cards > div{
+	/*width: 23.2%;*/
+	height: 100%;
+	/* border: black solid 2px; */
+	/*margin: 10px;*/
+	/* padding: 10px; */
+	flex: 0 1 24%;
+	box-shadow: 0px 10px 10px rgba(138, 138, 154, 0.50);
+}
+.cards > #defaultdiv{
+	background: #ebecee;
+}
+@media screen and (max-width: 768px) {
+	#firstcontent{
+		width: 100%;
+		margin: 0px;
+
+	}
+	#secondcontent{
+		width: 100%;
+		margin: 0px;
+	}
+	.cards > div {
+		flex: 0 1 50%;
+	}
+}
+@media screen and (max-width: 600px) {
+	#firstcontent{
+		width: 100%;
+		margin: 0px;
+
+	}
+	#secondcontent{
+		width: 100%;
+		margin: 0px;
+	}
+	.cards{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: stretch;
+		/* border: black solid 2px; */
+		/*margin: 10px;*/
+	}
+	.cards > div {
+		flex: 0 1 100%;
+	}
+}
+.imgdiv {
+	height: 200px;
+}
+#thumbicon{
+	margin-top: 1px;
+    margin-left: 17%;
+    width: 45px;
+    height: 35px;
+    float: right;
+    color: white;
+    background: rgba(180,180,180,0.8);
+    text-align: center;
+    padding-top: 10px;
+}
+#studioimg{
+	background-image: url("image/studio.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#outdoorimg{
+	background-image: url("image/outdoor.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#personalimg{
+	background-image: url("image/personal.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+#weddingimg{
+	background-image: url("image/wedding.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+.imgheading{
+	/* border:white solid 2px; */
+	text-align: center;
+	color: white;
+	height: 200px;
+	/*margin:10% 5% 25% 5%;*/
+	padding-top: 30px;
+}
+i{
+	font-size: 300%;
+	margin-top: 10%;
+}
+.fontheading{
+	line-height: 1px;
+}
+.imgheading > div{
+	font-size: 14px;
+}
+
+.pricediv{
+	/* border: black solid 2px; */
+	width: 90%;
+	height: 90px;
+	padding: 10% 5% 0% 5%;
+	font-size: 62px;
+	text-align: center;
+}
+.pricediv > #currency{
+	font-size: 16px;
+	position: absolute;
+	margin-top: 10px;
+}
+.listdiv{
+	/* border: black solid 2px; */
+	width: 100%;
+	height: 115px;
+	text-align: center;
+}
+.listitems{
+	list-style-type:none;
+	padding-left: 0;
+}
+.listitems > li{
+	font-size: 16px;
+	padding: 5px 0px;
+}
+.btndiv{
+	/* border: black solid 2px; */
+	width: 90%;
+	height: 125px;
+	padding: 8% 5% 8% 5%;
+	text-align: center;
+}
+#default-btndiv{
+	background-color: #08c1b8;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px 20px 0px;
+	cursor: pointer;
+}
+ #purchasebtn{
+	background-color:black;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px 20px 0px;
+	cursor: pointer;
+
+}
+.link{
+	padding: 20%;
+	color: #08c1b8;
+}
+
+.bottom-section > div{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+	text-align: center;
+	
+}
+.linkbottomsection{
+	color: #08c1b8;
+}
+
+/*Footer CSS*/
+
+footer{
+	background-color: black;
+	width: 100%;
+	height: 280px;
+	bottom: 0px;
+}
+.tp{
+	width: 100%;
+	background-color: #101110;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.top{
+	height: 200px;
+	width: 100%;
+	margin-left: 5%;
+    margin-right: 5%;
+	background-color: #101110;
+}
+#logo{
+	float: left;
+	margin-top: 30px;
+	padding-left: 20px;
+	width: 250px;
+	height: 150px;
+	flex: 0 1 18%;
+}
+.text{
+	float: left;
+	height: 150px;
+	width: 400px;
+	margin-left: 100px;
+	margin-top: 30px;
+	flex: 0 1 24%;
+}
+.text h4{
+	font-weight: bold;
+	font-size: 18px;
+	color: inherit;
+	color: #AEB3AE;
+  font-family: 'Poppins', sans-serif;
+}
+.text p{
+	font-size: 14px;
+	color: #B8BEB8;
+	margin-top: 15px;
+	font-family: 'Poppins', sans-serif;
+}
+.socialform{
+ float: right;
+ height: 150px;
+ position: relative;
+ margin-top: 30px;
+	flex: 0 1 30%;
+	
+}
+.social{
+	height: 50px;
+}
+.social ul{
+	height: 35px;
+}
+.social ul li{
+	display: inline-block;
+	margin: 5px;
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+	text-align: center;
+	background-color: rgba(189, 189, 189, 0.13);
+}
+.social ul li a{
+	
+	font-size: 12px;
+
+}
+.social ul li a i{
+	color: #DDD;
+	line-height: 30px;
+}
+.form{
+  height: 40px;
+  margin-left: 12%;
+  margin-top: 10px;
+  border: 1px solid rgba(148, 148, 148, 0.25);
+	background-color: rgba(189, 189, 189, 0.13);
+}
+.form input{
+	height: 35px;
+	width: 270px;
+	text-align: center;
+	border: 0;
+  font-size: 15px;
+	background-color: #00000000;
+
+
+}
+.form button{
+	height: 35px;
+	width: 40px;
+	margin-left: -5px;
+	border: 0;
+	background-color: #00000000;
+	line-height: 40px;
+	}
+.form i {
+	color: #DDD;
+}
+.bottom{
+	font-size: 15px;
+	height: 80px;
+	background-color: black;
+}
+.copytext{
+	float: left;
+	padding-left: 40px;
+	width: 60%;
+	
+}
+.copytext p{
+	color: #888;
+}
+.bottommenu{
+	float:right;
+  width: 30%;
+ 
+}
+.bottommenu ul li{
+	display: inline-block;
+	margin-right: 8px;
+	line-height: 50px;
+}
+.bottommenu ul li a{
+	text-decoration: none;
+	color: #888;
+}
+
+@media screen and (max-width: 768px) {
+	.top {
+		height: 600px;
+	}
+	#logo {
+		flex: 0 1 100%;
+	}
+	.text {
+		margin-left: 0;
+		flex: 0 1 100%;
+	}
+	.socialform {
+		flex: 0 1 100%;
+	}
+	.bottom {
+		height: 200px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.top {
+		height: 600px;
+	}
+	#logo {
+		flex: 0 1 100%;
+	}
+	.text {
+		margin-left: 0;
+		flex: 0 1 100%;
+	}
+	.socialform {
+		flex: 0 1 100%;
+	}
+	.bottom {
+		height: 200px;
+	}
+}
